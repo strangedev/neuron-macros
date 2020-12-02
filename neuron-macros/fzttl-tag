@@ -1,0 +1,3 @@
+#!/bin/bash
+
+neuron query -t $1 | jq -r ".result[] | {id: .zettelID, title: .zettelTitle, date: .zettelDate}"
