@@ -1,0 +1,3 @@
+#!/bin/bash
+
+neuron query | jq '.result[].zettelTags[]' | sort | uniq 
